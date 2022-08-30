@@ -1,0 +1,127 @@
+{
+  "admin": [
+    {
+      "id": 1,
+      "userName": "santosh",
+      "userEmail": "santosg@12gamil.com",
+      "userMob": "9860908859",
+      "gender": "male",
+      "userPass": "12345678"
+    },
+    {
+      "userName": "Santosh",
+      "userMob": "9860908859",
+      "userEmail": "santosh@77Gmail.com",
+      "userPass": "23234565",
+      "gender": "male",
+      "userCheck": true,
+      "id": 2
+    },
+    {
+      "userName": "sachin",
+      "userMob": "1231231231",
+      "userEmail": "santosh@gmail.com",
+      "userPass": "12121212",
+      "gender": "male",
+      "userCheck": true,
+      "id": 3
+    }
+  ],
+  "hotel": [
+    {
+      "userName": "poonam",
+      "hotelName": "oyo",
+      "hotelAddress": "Ahmadnagar",
+      "hotelMobile": "9860908859",
+      "hotelMenu": "Chicken",
+      "roomAvailable": "12",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 2
+    },
+    {
+      "userName": "Sachin Tendulkar",
+      "hotelName": "Jagdanb",
+      "hotelAddress": "Munbai",
+      "hotelMobile": "8787878787",
+      "hotelMenu": "Fish Pulav",
+      "roomAvailable": "07",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 4
+    },
+    {
+      "userName": "Vijay Shinde",
+      "hotelName": "Rajveer",
+      "hotelAddress": "Maka",
+      "hotelMobile": "9766725698",
+      "hotelMenu": "Shahi Panir",
+      "roomAvailable": "03",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 5
+    },
+    {
+      "userName": "Pravin Shinde",
+      "hotelName": "5 star",
+      "hotelAddress": "Ahmadnagar",
+      "hotelMobile": "9860908876",
+      "hotelMenu": "Paneer",
+      "roomAvailable": "10",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 6
+    },
+    {
+      "userName": "santosh",
+      "hotelName": "Pratik",
+      "hotelAddress": "Ahmadnagar",
+      "hotelMobile": "9860908859",
+      "hotelMenu": "Chicken",
+      "roomAvailable": "12",
+      "owenrCheck": true,
+      "userPass": "12345678",
+      "id": 7
+    }
+  ],
+  "owner": [
+    {
+      "userName": "Santosh",
+      "userMob": "9860908859",
+      "userEmail": "santosh@77Gmail.com",
+      "userPass": "12345678",
+      "gender": "male",
+      "userCheck": true,
+      "id": 2
+    },
+    {
+      "userName": "sassa",
+      "userMob": "12345678",
+      "userEmail": "san11@gmail.com",
+      "userPass": "12345678",
+      "gender": "male",
+      "userCheck": true,
+      "id": 3
+    },
+    {
+      "userName": "ssss",
+      "userMob": "22222",
+      "userEmail": "ss@gmail.com",
+      "userPass": "1111",
+      "gender": "male",
+      "userCheck": true,
+      "id": 4
+    }
+  ],
+  "user": [
+    {
+      "userName": "Santosh",
+      "userMob": "9860908859",
+      "userEmail": "santosh@77Gmail.com",
+      "userPass": "12345678",
+      "gender": "male",
+      "userCheck": true,
+      "id": 1
+    }
+  ]
+}

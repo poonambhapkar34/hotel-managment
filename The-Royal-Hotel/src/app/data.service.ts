@@ -47,6 +47,10 @@ export class DataService {
   getHotelCall(){
     return this.http.get(this.hotelurl)
   }
+    //getHotelCall by Id
+    getHotelCallById(id:any){
+      return this.http.get(this.hotelurl+ "/" + id)
+    }
   //postHotelCall
   postHotelCall(data:any){
     return this.http.post(this.hotelurl,data)

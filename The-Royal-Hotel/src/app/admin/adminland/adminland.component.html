@@ -1,10 +1,23 @@
 <div class="main">
     <button class="bg" mat-raised-button color="accent" routerLink="/home">Back</button>
 
-    <button class="bg" mat-raised-button color="primary"  routerLink="/adminsignin">Sign in</button>
-    
-    <button class="bg" mat-raised-button color="warn"  routerLink="/adminsignup">Sign up</button>
+    <button class="bg" mat-raised-button color="primary" routerLink="/adminsignin">Sign in</button>
 
-    <button class="btn btn-dark bg"  routerLink="/adminsucces">Hotel List</button>
-    
+    <button class="bg" mat-raised-button color="warn" routerLink="/adminsignup">Sign up</button>
+
+    <button class="btn btn-dark bg" routerLink="/adminsucces">Hotel List</button>
+    <button class="btn btn-dark bg" (click)="hotelReq()">Show Hotel Requests</button>
+    <div *ngIf="showReq">
+        <ul *ngFor="let hoteldata of hotelData">
+            <li>id:{{hoteldata.id}}</li>
+            <li>Name : {{hoteldata.userName}}</li>
+            <li>HotelName : {{hoteldata.hotelName}}</li>
+            <li>{{hoteldata.hotelMenu}}</li>
+            <li>{{hoteldata.roomAvailable}}</li>
+            <li>{{hoteldata.hotelAddress}}</li>
+            <li>{{hoteldata.hotelMobile}}</li>
+        </ul>
+        <button class="btn btn-dark bg" (click)="acceptRequest()">Accept Request</button>
+        <button class="btn btn-dark bg" (click)="rejectRequest()">Reject Request</button>
+    </div>
 </div>

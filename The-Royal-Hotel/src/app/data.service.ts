@@ -14,6 +14,8 @@ export class DataService {
   hotelurl= 'http://localhost:3000/hotel';
   editId: any;
   getApiData: any;
+  postData: any=[];
+  postDataObj: any;
 
 
 

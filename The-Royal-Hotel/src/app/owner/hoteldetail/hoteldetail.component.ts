@@ -22,7 +22,7 @@ editIdArray:any=[];
     this.dataId = this.dataservice.editId;
     this.editData = this.dataservice.getApiData;
     console.log('data.......', this.editData);
-    console.log('data..>>>',this.editData.userName);
+   // console.log('data..>>>',this.editData.userName);
     this. formData()
     //this.dataId ?  this.fetchIdData() : this.formData();
     //this.fetchIdData()
@@ -83,10 +83,14 @@ editIdArray:any=[];
 
     else {
       //post hotel data
-      this.dataservice.postHotelCall(data).subscribe((res) => {
-        console.log(res);
+      // this.dataservice.postHotelCall(data).subscribe((res) => {
+      //   console.log(res);
+      // })
+      this.dataservice.postDataObj = data;
+      this.dataservice.postData.push(data);
+      console.log('serv data',this.dataservice.postData);
+      
 
-      })
     }
     alert('data updated succesfully')
     this.route.navigateByUrl('/ownerland')

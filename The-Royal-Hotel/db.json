@@ -82,6 +82,58 @@
       "owenrCheck": true,
       "userPass": "12345678",
       "id": 7
+    },
+    {
+      "userName": "Poonam",
+      "hotelName": "Panchshil Hotel",
+      "hotelAddress": "Kolhapur",
+      "hotelMobile": "8989898989",
+      "hotelMenu": "Tanbda pandhara",
+      "roomAvailable": "6",
+      "owenrCheck": true,
+      "userPass": "poo$34"
+    },
+    {
+      "userName": "poo",
+      "hotelName": "Swad",
+      "hotelAddress": "kolhapur",
+      "hotelMobile": "8989899966",
+      "hotelMenu": "panir",
+      "roomAvailable": "5",
+      "owenrCheck": true,
+      "userPass": "poo$56"
+    },
+    {
+      "userName": "ppp",
+      "hotelName": "hhh",
+      "hotelAddress": "hhhkk",
+      "hotelMobile": "7676767676",
+      "hotelMenu": "gg",
+      "roomAvailable": "4",
+      "owenrCheck": true,
+      "userPass": "3456"
+    },
+    {
+      "userName": "kkk",
+      "hotelName": "llll",
+      "hotelAddress": "ttttt",
+      "hotelMobile": "5656565656",
+      "hotelMenu": "rrr",
+      "roomAvailable": "5",
+      "owenrCheck": true,
+      "userPass": "2345",
+      "id": 11
+    },
+    {
+      "userName": "abhi",
+      "hotelName": "sayaji",
+      "hotelAddress": "kolhapu",
+      "hotelMobile": "5656565656",
+      "hotelMenu": "tt",
+      "roomAvailable": "5",
+      "owenrCheck": true,
+      "userPass": "45678",
+      "id": 12
     }
   ],
   "owner": [

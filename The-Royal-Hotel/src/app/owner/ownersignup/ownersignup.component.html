@@ -37,9 +37,9 @@
         <label>
             <input type="checkbox" formControlName="userCheck" required > Accept Tc & Cs
         </label>
-
+        <!-- [disabled]="signUpForm.invalid" -->
         <div style="text-align: center;">
-            <button [disabled]="signUpForm.invalid" class="btn" mat-raised-button color="accent"
+            <button class="btn" mat-raised-button color="accent"
                 (click)="postOwnerdata(signUpForm.value)" >Sign up</button>
         </div><br>
 

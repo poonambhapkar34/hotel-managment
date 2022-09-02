@@ -24,13 +24,16 @@ export class OwnersignupComponent implements OnInit {
     });
   }
   postOwnerdata(data:any){
-    // console.log(data);
+    if(this.signUpForm.valid){    // console.log(data);
     //post hotel data
     this.dataservice.postOwnerCall(data).subscribe((res)=>{
       console.log(res);
 
   })
-
+    }
+    else{
+      alert('went wrong')
+    }
 
 }
 

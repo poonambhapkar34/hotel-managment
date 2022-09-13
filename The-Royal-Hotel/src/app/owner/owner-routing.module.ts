@@ -8,7 +8,18 @@ import { OwnersigninComponent } from './ownersignin/ownersignin.component';
 import { OwnersignupComponent } from './ownersignup/ownersignup.component';
 
 const routes: Routes = [
-  {path:'ownerland',component:OwnerlandComponent},
+  // {path:'ownerland',component:OwnerlandComponent},
+  // {path:'',redirectTo:'ownerland',pathMatch:'full'},
+
+  // {path:'ownersignin',component:OwnersigninComponent},
+  // {path:'ownersignup',component:OwnersignupComponent},
+  // {path:'hoteldetail',component:HoteldetailComponent},
+
+  // {path:'osucces',component:OsuccesComponent},
+  // {path:'ofaill',component:OfaillComponent}
+  {
+    path: 'owner', children:[
+   {path:'ownerland',component:OwnerlandComponent},
   {path:'',redirectTo:'ownerland',pathMatch:'full'},
 
   {path:'ownersignin',component:OwnersigninComponent},
@@ -17,6 +28,8 @@ const routes: Routes = [
 
   {path:'osucces',component:OsuccesComponent},
   {path:'ofaill',component:OfaillComponent}
+    ]
+  }
 
 ];
 

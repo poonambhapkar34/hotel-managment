@@ -134,6 +134,20 @@
       "owenrCheck": true,
       "userPass": "45678",
       "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "userName": "oyy",
+      "hotelName": "sawstik hotel",
+      "hotelAddress": "kop",
+      "hotelMobile": "8888888888",
+      "hotelMenu": "jjjj",
+      "roomAvailable": "4",
+      "owenrCheck": true,
+      "userPass": "poo333",
+      "id": 14
     }
   ],
   "owner": [

@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   constructor( private dataservice:DataService,private router :Router ) { }
 
   ngOnInit(): void {
+    console.log('home--->');
+    
   }
   Journey(data:any){
     console.log('...jy');

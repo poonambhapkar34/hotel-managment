@@ -7,17 +7,23 @@ import { AdminsignupComponent } from './adminsignup/adminsignup.component';
 import { AdminsuccesComponent } from './adminsucces/adminsucces.component';
 
 const routes: Routes = [
-  {path: 'adminland', component: AdminlandComponent},
-  {path:'', redirectTo:'adminland', pathMatch:'full'},
+  // {path: 'adminland', component: AdminlandComponent},
+  // {path:'', redirectTo:'adminland', pathMatch:'full'},
 
-  {path:'adminsignin',component:AdminsigninComponent},
-  {path:'adminsignup',component:AdminsignupComponent},
+  // {path:'adminsignin',component:AdminsigninComponent},
+  // {path:'adminsignup',component:AdminsignupComponent},
 
-  {path:'adminsucces',component:AdminsuccesComponent},
-  {path:'adminfaill',component:AdminfaillComponent},
-
-
-];
+  // {path:'adminsucces',component:AdminsuccesComponent},
+  // {path:'adminfaill',component:AdminfaillComponent},
+  {
+    path : 'admin',children:[
+    {path: 'adminland', component: AdminlandComponent},
+    {path:'adminsignin',component:AdminsigninComponent},
+    {path:'adminsignup',component:AdminsignupComponent},
+  //  {path:'adminsucces',component:AdminsuccesComponent},
+    {path:'adminfaill',component:AdminfaillComponent},
+  ]
+}]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

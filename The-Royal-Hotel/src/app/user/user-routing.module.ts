@@ -7,16 +7,25 @@ import { UsersuccesComponent } from './usersucces/usersucces.component';
 
 
 const routes: Routes = [
-  {path: 'userland', component: UserlandComponent},
-  {path:'', redirectTo:'userland', pathMatch:'full'},
+  // {path: 'userland', component: UserlandComponent},
+  // {path:'', redirectTo:'userland', pathMatch:'full'},
 
-  {path:'usersignin',component:UsersigninComponent},
-  {path:'usersignup',component:UsersignupComponent},
+  // {path:'usersignin',component:UsersigninComponent},
+  // {path:'usersignup',component:UsersignupComponent},
   
-  {path:'usersucces',component:UsersuccesComponent},
+  // {path:'usersucces',component:UsersuccesComponent},
 
-
-
+  {path:'user' , children:[
+    {path: 'userland', component: UserlandComponent},
+    {path:'', redirectTo:'userland', pathMatch:'full'},
+  
+    {path:'usersignin',component:UsersigninComponent},
+    {path:'usersignup',component:UsersignupComponent},
+    
+    {path:'usersucces',component:UsersuccesComponent},
+  
+  ]
+  }
 ];
 
 @NgModule({

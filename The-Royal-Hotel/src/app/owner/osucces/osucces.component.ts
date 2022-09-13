@@ -19,7 +19,7 @@ export class OsuccesComponent implements OnInit {
 
   async getHotelDetails() {
     // this.dataservice.getHotelCall().subscribe((data) => {
-    //   this.apidata =data
+    //   this.apidata = data
     //   console.log(data);
     // })
     this.apidata = await this.dataservice.getHotelCall().toPromise();

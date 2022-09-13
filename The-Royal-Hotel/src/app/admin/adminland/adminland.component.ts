@@ -6,6 +6,7 @@ import { DataService } from 'src/app/data.service';
   templateUrl: './adminland.component.html',
   styleUrls: ['./adminland.component.scss']
 })
+
 export class AdminlandComponent implements OnInit {
   hotelData: any;
   showReq: boolean =false;

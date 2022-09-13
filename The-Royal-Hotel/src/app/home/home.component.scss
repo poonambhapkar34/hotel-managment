@@ -2,6 +2,8 @@
 .main{
     background-image: url('~src/assets/img/water.jpeg');
     opacity: 0.5px;
+  
+       
 }
 body{
     background-image: url('~src/assets/img/royal.jpg');
@@ -10,4 +12,12 @@ body{
 }
 .bg{
     margin-left: 5px;
+}
+.innermain{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+  
+    z-index: 999;
+
 }

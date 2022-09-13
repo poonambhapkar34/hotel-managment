@@ -7,17 +7,31 @@ import { HttpClient } from "@angular/common/http";
 })
 export class DataService {
   // url='http://localhost:3000'
+  lat=19.09;
+  lon=72.87;
+  hours=48;
   userJourney:any
   adminurl= 'http://localhost:3000/admin';
   userurl= 'http://localhost:3000/user';
   ownerurl= 'http://localhost:3000/owner';
   hotelurl= 'http://localhost:3000/hotel';
+  weatherUrl = 'https://weatherbit-v1-mashape.p.rapidapi.com/forecast/hourly?lat=19.09&lon=72.87&hours=24'
+  weatherUrlDynamic ='https://weatherbit-v1-mashape.p.rapidapi.com/forecast/hourly?'
+  headerBody= {
+    'X-RapidAPI-Key': '04c336eb96msh74505f5bc219783p1e48f0jsn82df14d88286',
+   'X-RapidAPI-Host' :'weatherbit-v1-mashape.p.rapidapi.com'
+}
   editId: any;
   getApiData: any;
   postData: any=[];
   postDataObj: any;
-
-
+ 
+ getWeatherData(){
+  return this.http.get(this.weatherUrl, {headers:this.headerBody});
+}
+getWeatherDataDynamic(){
+  return this.http.get(this.weatherUrlDynamic+'lat='+this.lat+'&lon='+  this.lon+'&hours='+this.hours, {headers:this.headerBody});
+}
 
   constructor(private http : HttpClient) { }
 
